@@ -1,4 +1,4 @@
-# E4.Test3 si a WEB API application
+# E4.Test3 is a WEB API application
 It used an XML file as DB which can be found in the APP_Data folder
 As required it has GET, POST and DELETE actions that havebeen implemented
 I have used POSTMAN to test the application

@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "39f666dd-a4a6-4b50-9bf4-fa21c25faf1b",
+		"name": "WebAPITest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Student by ID",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "edededed",
+							"type": "text"
+						},
+						{
+							"key": "Surname",
+							"value": "ololol",
+							"type": "text"
+						},
+						{
+							"key": "Phone",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/values/5ba5be30-4605-4178-b3b9-38ec21e1c90c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"values",
+						"5ba5be30-4605-4178-b3b9-38ec21e1c90c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add/Update Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\": \"3fb55145-f8c9-4ae0-a315-46d55138fd5f\",\r\n\t\"Name\": \"Moomooo\",\r\n\t\"Surname\": \"Test\",\r\n\t\"Phone\": \"56278342\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/values",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\": \"3fb55145-f8c9-4ae0-a315-46d55138fd5f\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/values/5ba5be30-4605-4178-b3b9-38ec21e1c90c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"values",
+						"5ba5be30-4605-4178-b3b9-38ec21e1c90c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/values",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
